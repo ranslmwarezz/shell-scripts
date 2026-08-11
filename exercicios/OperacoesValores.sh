@@ -26,7 +26,7 @@ fi
 		;;
 		2)
 			echo "Opção: $ESCOLHA"
-			if [[ "$NUM1" -eq 0 || "$NUM2" -eq 0 ]];
+			if [ "$NUM2" == 0 ];
 				then
 					echo "Esse valor não é aceito!"
 					exit 1
@@ -40,11 +40,6 @@ fi
 		;;
 		3)
 		echo "Opção: $ESCOLHA"
-                        if [[ "$NUM1" -eq 0 || "$NUM2" -eq 0 ]];
-                                then
-                                        echo "Esse valor não é aceito!"
-                                        exit 1
-fi
 		echo "Resultado da multiplicação: $(expr "$NUM1" \* "$NUM2")"
 		;;
 		4)
