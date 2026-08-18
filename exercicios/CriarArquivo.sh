@@ -14,6 +14,8 @@ do
 	# O '<' faz o wc retornar apenas a quantidade de bytes do arquivo
 	TAMANHO=$(wc -c < "$NOME_ARQUIVO")
 	RESTANTE=$((TAM_BYTES - TAMANHO))
+		# A sintaxe da usada no if retorna o número de caracteres da
+		# variável 'CONJUNTO'
 		if [[ "${#CONJUNTO}" -gt "$RESTANTE" ]];
 			then
 			echo -n ${CONJUNTO:0:RESTANTE} >> "$NOME_ARQUIVO"

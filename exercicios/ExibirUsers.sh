@@ -7,7 +7,7 @@ UID_MAX=6000
 
 IFS=$'\n'
 
-	echo -e "USUÁRIO\t UID\t DIR\t HOME\t NOME OU DESCRIÇÃO"
+	echo -e "USUÁRIO\t UID\t DIR HOME\t NOME OU DESCRIÇÃO"
 
 	for i in $(cat /etc/passwd)
 do
